@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right , aqua, sienna, beige);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    opacity: 0.65;
+
+}
+
+#navbar .logo{
+      display: flex;
+      align-items: center;
+      z-index: 1;
+}
+
+#navbar .product {
+      display: flex;
+      justify-content: center;
+}
+
+#navbar .product li {
+      padding: 1rem ;
+    list-style: none;
+}
+
+#navbar .product li a {
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+}
+
+#navbar .product li a:hover{
+    color: black;
+}
+
+#showcase {
+    background: url("../img/background3.jpeg")  ;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase .showcase-content{
+      background: rgba(0,0,0,.7);
+      height: inherit;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+}
+
+#showcase .showcase-content h1 {
+      font-size: 6rem;
+      color: #fff;
+      letter-spacing: .3rem;
+      animation: move 1s ease-in;
+}
+
+#showcase .showcase-content em{
+    font-size: 3rem;
+    margin: 1.5rem;
+    animation: move .95s ease-in;
+    color: white;
+}
+ @keyframes move {
+      0%   {
+            transform: translateX(-27rem);
+            color: red;
+      }
+
+      100% {
+            color: #fff;
+      }
+}
+
+#gallery h3 {
+    text-align: center;
+    color: #766;
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+#gallery .gallery-container{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    max-width: 1200px;
+    padding: 0 3.5rem;
+    margin: auto;
+}
+
+#gallery .gallery-container .card {
+    flex: 1;
+    margin: .75rem;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding:1rem 7rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer div p{
+    display: inline
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+;
+}
+
+
+
